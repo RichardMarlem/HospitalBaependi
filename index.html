@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/6621c552df.js" crossorigin="anonymous"></script>
+    <title>Controle Limpeza</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
+        <nav>
+            <a href="#"><i class="fa-solid fa-mattress-pillow"></i> CAMAREIRA</a>
+            <a href="#"><i class="fa-solid fa-calendar-days"></i> CRONOGRAMA</a>
+        </nav>
+    </header>
+    <main>
+        <div class="controle">
+            <h1>FAXINA</h1>
+            <div class="informacoes_controle">
+                <div class="dados_controle">
+                    <label for="setor">Setor:</label>
+                    <select name="setor" id="setor">
+                        <option value="">Selecione</option>
+                        <option value="noturno">Noturno</option>
+                        <option value="c1">C-1</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="Ambulatorio Covid">Ambulatório Covid-19</option>
+                        <option value="Bloco Cirurgico">Bloco Cirurgico</option>
+                    </select>
+                </div>
+                <div class="dados_controle">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="João Maria">
+                </div>
+                <div class="dados_controle">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+                </div>
+            </div>
+        </div>
+        <div id="checklist">
+            <h1>Setores</h1>
+            <div id="formulario">
+                <div class="dados_checklist">
+                    
+                    <label for="secretaria">Secretaria:</label><select name="secretaria" id="dadosSecretaria">
+                        <option value="">Selecione</option>
+                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    
+                    <label for="salaEspera">P.S Sala de Espera:</label><select name="salaEspera" id="salaEspera">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    
+                    <label for="recepcaoCtImagens">Recepção Centro de Imagens:</label><select name="recepcaoCtImagens" id="recepcaoCtImagens">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

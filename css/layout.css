@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--background);
+}
+
+/*VERSÃO PRONTA PARA TABLET*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 10rem;
+    margin: auto;
+    background-color: var(--background2);
+    gap: 1rem;
+    width: 100%;
+
+    img{
+        width: 10rem;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color2);
+        font-weight: 400;
+        transition: all 0.5s;
+        font-size: 0.8rem;
+        text-transform: lowercase;
+    }
+}
+
+nav a:hover{
+    color: var(--colorHover);
+    transition: all 0.5s;
+}
+
+main{
+    padding: 1rem 2rem;
+}
+
+.controle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 10rem;
+    margin: auto;
+
+    h1{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--color2);
+        margin-bottom: 3rem;
+    }
+}
+
+.informacoes_controle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2.2rem;
+}
+
+.dados_controle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: start;
+    
+
+    label{
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: var(--color2);
+    }
+
+    input{
+        width: 12rem;
+        height: 2rem;
+        padding: 0.4rem 0.8rem;
+        border: none;
+        border-bottom: 0.1rem solid var(--border);
+        border-top-right-radius: 0.4rem;
+        border-top-left-radius: 0.4rem;
+    }
+
+    select{
+        width: 12rem;
+        height: 2rem;
+        padding: 0.4rem;
+        border: none;
+        border-bottom: 0.1rem solid var(--border);
+        border-top-right-radius: 0.4rem;
+        border-top-left-radius: 0.4rem;
+        
+    }
+
+    option{
+       background-color: var(--background3);
+       color: var(--color); 
+    }
+}
+
+#checklist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2rem 2.5rem;
+    margin: auto;
+    width: 100%;
+    border: 0.1rem solid var(--border);
+    border-radius: 0.4rem;
+    background-color: var(--background3);
+    
+
+    h1{
+        color: var(--colorHover);
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    border: 0.1rem solid var(--border);
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+.dados_checklist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+
+    select{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+}
+
