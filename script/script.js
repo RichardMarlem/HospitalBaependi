@@ -1164,7 +1164,11 @@ function mostrarForm(){
        ` 
     }
      else {
-        formulario.innerHTML = '';
+        formulario.innerHTML = `
+            <div class="logoHospital">
+                <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
+            </div> 
+        `;
         textoSetor.innerHTML = ``;
     }
 }
