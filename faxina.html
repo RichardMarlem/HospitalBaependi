@@ -12,8 +12,9 @@
     <header>
         <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
         <nav>
-            <a href="#"><i class="fa-solid fa-mattress-pillow"></i> CHECK-LIST CAMAREIRA</a>
-            <a href="#"><i class="fa-solid fa-calendar-days"></i> CRONOGRAMA</a>
+            <a href="/index.html"><span><i class="fa-solid fa-house"></i></span> Início</a>
+            <a href="#"><span><i class="fa-solid fa-mattress-pillow"></i></span> Check-list Camareira</a>
+            <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span> Check-list Cronograma</a>
         </nav>
     </header>
     <main>
@@ -22,7 +23,7 @@
             <div class="informacoes_controle">
                 <div class="dados_controle">
                     <label for="setor">Setor:</label>
-                    <select name="setor" id="setor" onchange="mostrarForm()">
+                    <select name="setor" id="setor" onchange="mostrarForm()" required>
                         <option value="">Selecione</option>
                         <option value="noturno">Noturno</option>
                         <option value="c1">C-1</option>
@@ -37,11 +38,11 @@
                 </div>
                 <div class="dados_controle">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="João Maria">
+                    <input type="text" id="nome" name="nome" placeholder="João Maria" required>
                 </div>
                 <div class="dados_controle">
                     <label for="data">Data:</label>
-                    <input type="date" id="data" name="data">
+                    <input type="date" id="data" name="data" required>
                 </div>
             </div>
         </div>

@@ -104,6 +104,8 @@ function coletarDados() {
         verificarQuartoDiariaA: val("verificarQuartoDiariaA"),
         salaCarneA: val("salaCarneA"),
         salaServicoSocialA: val("salaServicoSocialA"),
+        observacaoA: val("observacaoA"),
+        
     };
 }
 
@@ -120,7 +122,7 @@ function mostrarForm(){
                     <label for="secretaria">Secretaria:</label>
                     <select name="secretaria" id="secretaria">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -131,7 +133,7 @@ function mostrarForm(){
                     <label for="salaEspera">P.S Sala de Espera:</label>
                     <select name="salaEspera" id="salaEspera">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -142,7 +144,7 @@ function mostrarForm(){
                     <label for="recepcaoCtImagens">Recepção Centro de Imagens:</label>
                     <select name="recepcaoCtImagens" id="recepcaoCtImagens">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -153,7 +155,7 @@ function mostrarForm(){
                     <label for="banheirosCtImagens">Banheiros Centro de Imagens:</label>
                     <select name="banheirosCtImagens" id="banheirosCtImagens">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -164,7 +166,7 @@ function mostrarForm(){
                     <label for="consultoriosPs">Consultórios P.S:</label>
                     <select name="consultoriosPs" id="consultoriosPs">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -175,7 +177,7 @@ function mostrarForm(){
                     <label for="consultoriosCtImagens">Consultórios Centro de Imagens:</label>
                     <select name="consultoriosCtImagens" id="consultoriosCtImagens">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -186,7 +188,7 @@ function mostrarForm(){
                     <label for="salaEmergencia">Sala de Emergência:</label>
                     <select name="salaEmergencia" id="salaEmergencia">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -197,7 +199,7 @@ function mostrarForm(){
                     <label for="salaSinais">Sala de Sinais:</label>
                     <select name="salaSinais" id="salaSinais">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -208,7 +210,7 @@ function mostrarForm(){
                     <label for="lixoUtiD">Retirar o Lixo UTI D:</label>
                     <select name="lixoUtiD" id="lixoUtiD">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -219,7 +221,7 @@ function mostrarForm(){
                     <label for="lixoUtiCentral">Retirar o Lixo UTI Central:</label>
                     <select name="lixoUtiCentral" id="lixoUtiCentral">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -230,7 +232,7 @@ function mostrarForm(){
                     <label for="lixoCovid">Retirar o Lixo Setor Covid:</label>
                     <select name="lixoCovid" id="lixoCovid">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -241,7 +243,7 @@ function mostrarForm(){
                     <label for="salaMedicacao">Sala de Medicação:</label>
                     <select name="salaMedicacao" id="salaMedicacao">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -252,7 +254,7 @@ function mostrarForm(){
                     <label for="salaCurativo">Sala de Curativo:</label>
                     <select name="salaCurativo" id="salaCurativo">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -263,7 +265,7 @@ function mostrarForm(){
                     <label for="salaSutura">Sala de Sutura:</label>
                     <select name="salaSutura" id="salaSutura">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -274,7 +276,7 @@ function mostrarForm(){
                     <label for="banheiroFuncionarios">Banheiro Funcionários:</label>
                     <select name="banheiroFuncionarios" id="banheiroFuncionarios">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -285,7 +287,7 @@ function mostrarForm(){
                     <label for="salaOrtopedia">Sala da ortopedia:</label>
                     <select name="salaOrtopedia" id="salaOrtopedia">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -296,7 +298,7 @@ function mostrarForm(){
                     <label for="banheiroOrtopedia">Banheiro da ortopedia:</label>
                     <select name="banheiroOrtopedia" id="banheiroOrtopedia">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -307,7 +309,7 @@ function mostrarForm(){
                     <label for="corredorPs">Corredor do P.S:</label>
                     <select name="corredorPs" id="corredorPs">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -318,7 +320,7 @@ function mostrarForm(){
                     <label for="limpezaLaboratorio">Limpeza no laboratório:</label>
                     <select name="limpezaLaboratorio" id="limpezaLaboratorio">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -329,7 +331,7 @@ function mostrarForm(){
                     <label for="lavarLixeiras">Lavar as lixeiras:</label>
                     <select name="lavarLixeiras" id="lavarLixeiras">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -340,7 +342,7 @@ function mostrarForm(){
                     <label for="corredores">Corredores:</label>
                     <select name="corredores" id="corredores">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -351,7 +353,7 @@ function mostrarForm(){
                     <label for="vestiarios">Vestiários:</label>
                     <select name="vestiarios" id="vestiarios">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -362,7 +364,7 @@ function mostrarForm(){
                     <label for="recolherRoupas">Recolher as roupas nos setores:</label>
                     <select name="recolherRoupas" id="recolherRoupas">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -373,7 +375,7 @@ function mostrarForm(){
                     <label for="salaMedicaoImagens">Sala de medicação do centro de imagens:</label>
                     <select name="salaMedicaoImagens" id="salaMedicaoImagens">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -384,7 +386,7 @@ function mostrarForm(){
                     <label for="limpezaEnceradeira">Limpeza enceradeira area externa:</label>
                     <select name="limpezaEnceradeira" id="limpezaEnceradeira">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -395,7 +397,7 @@ function mostrarForm(){
                     <label for="quartoPlantonista">Quarto do plantonista:</label>
                     <select name="quartoPlantonista" id="quartoPlantonista">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -406,7 +408,7 @@ function mostrarForm(){
                     <label for="salaRx">Sala do RX:</label>
                     <select name="salaRx" id="salaRx">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -417,7 +419,7 @@ function mostrarForm(){
                     <label for="copaCentroImagens">Copa do centro de imagens:</label>
                     <select name="copaCentroImagens" id="copaCentroImagens">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
@@ -428,12 +430,18 @@ function mostrarForm(){
                     <label for="copaCentroAdministrativo">Copa centro administrativo  :</label>
                     <select name="copaCentroAdministrativo" id="copaCentroAdministrativo">
                         <option value="">Selecione</option>
-                        <option value="Limpeza Diaria">Limpeza Diária</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
                         <option value="Limpeza Quartos">Limpeza Quartos</option>
                         <option value="Limpeza Terminal">Limpeza Terminal</option>
                         <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
                         <option value="Noturno">Noturno</option>
                     </select>
+                </div>
+                <div class="dados_checklist">
+                        <label for="observacaoA">
+                            OBSERVAÇÃO:
+                        </label>
+                        <input type="text" name="observacaoA" id="observacaoA">
                 </div>
         `
     } else if (setores == 'c1') {
@@ -444,7 +452,7 @@ function mostrarForm(){
                         <label for="recepcaoC1">RECEPÇÃO:</label>
                         <select name="recepcaoC1" id="recepcaoC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -455,7 +463,7 @@ function mostrarForm(){
                         <label for="postoEnfermagemC1">POSTO DE ENFERMAGEM:</label>
                         <select name="postoEnfermagemC1" id="postoEnfermagemC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -466,7 +474,7 @@ function mostrarForm(){
                         <label for="quartoMedicosC1">QUARTO DOS MÉDICOS:</label>
                         <select name="quartoMedicosC1" id="quartoMedicosC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -477,7 +485,7 @@ function mostrarForm(){
                         <label for="salaTelefonistaC1">SALA DA TELEFONISTA:</label>
                         <select name="salaTelefonistaC1" id="salaTelefonistaC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -488,7 +496,7 @@ function mostrarForm(){
                         <label for="bancoSangueC1">BANCO DE SANGUE:</label>
                         <select name="bancoSangueC1" id="bancoSangueC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -499,7 +507,7 @@ function mostrarForm(){
                         <label for="lactarioC1">LACTÁRIO:</label>
                         <select name="lactarioC1" id="lactarioC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -510,7 +518,7 @@ function mostrarForm(){
                         <label for="quartoPlantonistaC1">QUARTO PLANTONISTA:</label>
                         <select name="quartoPlantonistaC1" id="quartoPlantonistaC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -523,7 +531,7 @@ function mostrarForm(){
                         </label>
                         <select name="segurancaTrabalhoC1" id="segurancaTrabalhoC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -536,7 +544,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaEnfermagemC1" id="salaEnfermagemC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -549,7 +557,7 @@ function mostrarForm(){
                         </label>
                         <select name="dmlC1" id="dmlC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -562,7 +570,7 @@ function mostrarForm(){
                         </label>
                         <select name="qualidade35C1" id="qualidade35C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -575,7 +583,7 @@ function mostrarForm(){
                         </label>
                         <select name="governanca36C1" id="governanca36C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -588,7 +596,7 @@ function mostrarForm(){
                         </label>
                         <select name="compras37C1" id="compras37C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -601,7 +609,7 @@ function mostrarForm(){
                         </label>
                         <select name="dprh38C1" id="dprh38C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -614,7 +622,7 @@ function mostrarForm(){
                         </label>
                         <select name="financeiro39C1" id="financeiro39C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -627,7 +635,7 @@ function mostrarForm(){
                         </label>
                         <select name="slReuniao30C1" id="slReuniao30C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -640,7 +648,7 @@ function mostrarForm(){
                         </label>
                         <select name="slFaturamento30C1" id="slFaturamento30C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -653,7 +661,7 @@ function mostrarForm(){
                         </label>
                         <select name="slMarbioC1" id="slMarbioC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -666,7 +674,7 @@ function mostrarForm(){
                         </label>
                         <select name="corredorCentralC1" id="corredorCentralC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -679,7 +687,7 @@ function mostrarForm(){
                         </label>
                         <select name="consultorio04C1" id="consultorio04C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -692,7 +700,7 @@ function mostrarForm(){
                         </label>
                         <select name="banheiroC1" id="banheiroC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -705,7 +713,7 @@ function mostrarForm(){
                         </label>
                         <select name="consultorio01C1" id="consultorio01C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -718,7 +726,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaGinecologicaC1" id="salaGinecologicaC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -731,7 +739,7 @@ function mostrarForm(){
                         </label>
                         <select name="slPequenaCirurgia02C1" id="slPequenaCirurgia02C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -744,7 +752,7 @@ function mostrarForm(){
                         </label>
                         <select name="rxC1" id="rxC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -757,7 +765,7 @@ function mostrarForm(){
                         </label>
                         <select name="recepcaoOrtopediaC1" id="recepcaoOrtopediaC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -770,7 +778,7 @@ function mostrarForm(){
                         </label>
                         <select name="corredorC1" id="corredorC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -783,7 +791,7 @@ function mostrarForm(){
                         </label>
                         <select name="epiC1" id="epiC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -796,7 +804,7 @@ function mostrarForm(){
                         </label>
                         <select name="consultorio03C1" id="consultorio03C1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -809,12 +817,18 @@ function mostrarForm(){
                         </label>
                         <select name="salaMedicosTiC1" id="salaMedicosTiC1">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
                             <option value="Noturno">Noturno</option>
                         </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="observacaoA">
+                            OBSERVAÇÃO:
+                        </label>
+                        <input type="text" name="observacaoA" id="observacaoA">
                     </div>
         `;
 
@@ -828,7 +842,7 @@ function mostrarForm(){
                         </label>
                         <select name="emodimanicaA" id="emodimanicaA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -841,7 +855,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaRecuperacaoA" id="salaRecuperacaoA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -854,7 +868,7 @@ function mostrarForm(){
                         </label>
                         <select name="banheiroA" id="banheiroA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -867,7 +881,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaLaudoA" id="salaLaudoA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -880,7 +894,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaExamesA" id="salaExamesA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -893,7 +907,7 @@ function mostrarForm(){
                         </label>
                         <select name="banheiroFuncionariosA" id="banheiroFuncionariosA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -906,7 +920,7 @@ function mostrarForm(){
                         </label>
                         <select name="expurgoA" id="expurgoA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -919,7 +933,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaMedicosA" id="salaMedicosA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -932,7 +946,7 @@ function mostrarForm(){
                         </label>
                         <select name="expurgoEnfermagemA" id="expurgoEnfermagemA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -945,7 +959,7 @@ function mostrarForm(){
                         </label>
                         <select name="quartos108A" id="quartos108A">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -958,7 +972,7 @@ function mostrarForm(){
                         </label>
                         <select name="quartos107A" id="quartos107A">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -971,7 +985,7 @@ function mostrarForm(){
                         </label>
                         <select name="quartos106A" id="quartos106A">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -984,7 +998,7 @@ function mostrarForm(){
                         </label>
                         <select name="quartos105A" id="quartos105A">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -997,7 +1011,7 @@ function mostrarForm(){
                         </label>
                         <select name="quartos104A" id="quartos104A">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1010,7 +1024,7 @@ function mostrarForm(){
                         </label>
                         <select name="quartos103A" id="quartos103A">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1023,7 +1037,7 @@ function mostrarForm(){
                         </label>
                         <select name="corredorA" id="corredorA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1036,7 +1050,7 @@ function mostrarForm(){
                         </label>
                         <select name="limpezaAreaExternaA" id="limpezaAreaExternaA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1049,7 +1063,7 @@ function mostrarForm(){
                         </label>
                         <select name="epiA" id="epiA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1062,7 +1076,7 @@ function mostrarForm(){
                         </label>
                         <select name="expurgoLimpezaA" id="expurgoLimpezaA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1075,7 +1089,7 @@ function mostrarForm(){
                         </label>
                         <select name="rampaA" id="rampaA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1088,7 +1102,7 @@ function mostrarForm(){
                         </label>
                         <select name="retirarResiduosA" id="retirarResiduosA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1101,7 +1115,7 @@ function mostrarForm(){
                         </label>
                         <select name="levarLixoA" id="levarLixoA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1114,7 +1128,7 @@ function mostrarForm(){
                         </label>
                         <select name="entregarCheckMesA" id="entregarCheckMesA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1127,7 +1141,7 @@ function mostrarForm(){
                         </label>
                         <select name="verificarQuartoDiariaA" id="verificarQuartoDiariaA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1140,7 +1154,7 @@ function mostrarForm(){
                         </label>
                         <select name="salaCarneA" id="salaCarneA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
@@ -1153,12 +1167,18 @@ function mostrarForm(){
                         </label>
                         <select name="salaServicoSocialA" id="salaServicoSocialA">
                             <option value="">Selecione</option>
-                            <option value="Limpeza Diaria">Limpeza Diária</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
                             <option value="Limpeza Quartos">Limpeza Quartos</option>
                             <option value="Limpeza Terminal">Limpeza Terminal</option>
                             <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
                             <option value="Noturno">Noturno</option>
                         </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="observacaoA">
+                            OBSERVAÇÃO:
+                        </label>
+                        <input type="text" name="observacaoA" id="observacaoA">
                     </div>
        
        ` 
@@ -1173,12 +1193,35 @@ function mostrarForm(){
     }
 }
 
-function verDados() {
+async function verDados() {
     const dados = coletarDados();
 
-    console.log(dados);
-    console.table(dados);
+    // Verifica se os dados principais foram preenchidos
+    if (!dados.setor || !dados.nome || !dados.data) {
+        alert("Preencha o setor, o nome e a data antes de registrar.");
+        return;
+    }
+
+    try {
+        const resposta = await fetch("https://defaultb5738c79b980469fadac95ed46cede.ef.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/ded80f2c5ab641fab3c08ffee7b52215/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7-XIf8KXLM8ghgjmTBa_Jz-WYr6nvhYZkVQ8reyCVEc", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(dados)
+        });
+
+        if (!resposta.ok) {
+            throw new Error(`Erro HTTP: ${resposta.status}`);
+        }
+
+        alert("Checklist enviado com sucesso!");
+
+    } catch (erro) {
+        console.error("Erro ao enviar o checklist:", erro);
+        alert("Não foi possível enviar o checklist. Verifique a conexão e o webhook.");
+    }
+
+    mostrarForm()
 }
 
-const dados = coletarDados();
-console.log(dados);
