@@ -156,14 +156,14 @@ main{
 
 .dados_controle{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 30% 70%;
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
     
 
     label{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-weight: 300;
         color: var(--color2);
     }
@@ -364,7 +364,7 @@ footer{
 }
 
 /*VERSÃO FEITA PRO TABLET*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 568px) and (max-width: 991px) {
 
 header{
     display: flex;
@@ -410,7 +410,15 @@ main {
     margin: auto;
     width: 100%;
     height: auto;
-    min-height: 50vh;
+    min-height: 71vh;
+    padding: 1rem 2rem 2rem;
+}
+
+.lancarServicos{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
     padding: 1rem 2rem 2rem;
 }
 
@@ -438,7 +446,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 1rem;
     width: 100%;
     height: 14rem;
     background-color: var(--background3);
@@ -460,7 +468,7 @@ main {
 
 
     h1{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         text-align: center;
         margin-top: 1.5rem;
         font-weight: 600;
@@ -491,24 +499,20 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 1rem 2rem;
-    margin: auto;
+    padding: 0.6rem 2rem;
 
     h1{
         font-size: 1.5rem;
         font-weight: 400;
         color: var(--color2);
-        margin-bottom: 2rem;
+        text-align: center;
     }
 }
 
 .informacoes_controle {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    gap: 3rem;
 }
 
 .dados_controle {
@@ -517,11 +521,11 @@ main {
 }
 
 .dados_controle{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: start;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 1rem;
     
 
     label{
@@ -541,19 +545,22 @@ main {
     }
 
     select{
-        width: 12rem;
+        width: 100%;
+        min-width: 28.3rem;
         height: 2rem;
         padding: 0.4rem;
         border: none;
         border-bottom: 0.1rem solid var(--border);
         border-top-right-radius: 0.4rem;
         border-top-left-radius: 0.4rem;
+        margin-left: 1.2rem;
         
     }
 
     option{
        background-color: var(--background3);
-       color: var(--color); 
+       color: var(--color);
+       
     }
 }
 
@@ -562,10 +569,10 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 2rem 2.5rem;
+    padding: 0.5rem 2.5rem;
     margin: auto;
     width: 100%;
-    height: 32rem;
+    height: 29.2rem;
     border-radius: 0.4rem;
     background-color: var(--background3);
     
@@ -580,7 +587,7 @@ main {
 
     p{
         color: var(--color);
-        font-weight: 400;
+        font-weight: 200;
         font-size: 1rem;
         margin-bottom: 0.5rem;
         align-self: flex-start;
@@ -595,9 +602,9 @@ main {
     justify-content: flex-start;
     background-color: var(--background2);
     width: 100%;
-    height: 25rem;
+    height: 15rem;
     min-height: 0;
-    flex: 0 0 24rem;
+    flex: 0 0 22.9rem;
     box-sizing: border-box;
     border: 0.1rem solid var(--border);
     padding: 0.8rem;
@@ -645,6 +652,16 @@ main {
     option{
        background-color: var(--background3);
        color: var(--color); 
+    }
+
+    input{
+        width: 100%;
+        height: 2rem;
+        padding: 0.4rem;
+        border: none;
+        border-bottom: 0.1rem solid var(--border);
+        border-top-right-radius: 0.4rem;
+        border-top-left-radius: 0.4rem;
     }
 }
 
