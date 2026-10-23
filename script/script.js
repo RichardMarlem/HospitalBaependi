@@ -116,7 +116,7 @@ function mostrarForm(){
     const setores = document.getElementById('setor').value
     const textoSetor = document.getElementById('nomeSetor');
 
-    if (setores == 'noturno') {
+    if (setores == 'Noturno') {
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -446,7 +446,7 @@ function mostrarForm(){
                         <input type="text" name="observacaoNoturno" id="observacaoNoturno">
                 </div>
         `
-    } else if (setores == 'c1') {
+    } else if (setores == 'C-1') {
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
