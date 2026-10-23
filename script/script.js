@@ -1195,23 +1195,43 @@ function mostrarForm(){
     }
 }
 
+function limparFormulario() {
+    
+    document.getElementById('setor').value = '';
+    document.getElementById('nome').value = '';
+    document.getElementById('data').value = '';
+
+    
+    const formulario = document.getElementById('formulario');
+    formulario.innerHTML = `
+        <div class="logoHospital">
+            <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
+        </div>
+    `;
+
+    
+    document.getElementById('nomeSetor').innerHTML = '';
+}
+
 async function verDados() {
     const dados = coletarDados();
 
-    // Verifica se os dados principais foram preenchidos
     if (!dados.setor || !dados.nome || !dados.data) {
         alert("Preencha o setor, o nome e a data antes de registrar.");
         return;
     }
 
     try {
-        const resposta = await fetch("https://defaultb5738c79b980469fadac95ed46cede.ef.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/ded80f2c5ab641fab3c08ffee7b52215/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7-XIf8KXLM8ghgjmTBa_Jz-WYr6nvhYZkVQ8reyCVEc", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(dados)
-        });
+        const resposta = await fetch(
+            "https://defaultb5738c79b980469fadac95ed46cede.ef.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/ded80f2c5ab641fab3c08ffee7b52215/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7-XIf8KXLM8ghgjmTBa_Jz-WYr6nvhYZkVQ8reyCVEc",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(dados)
+            }
+        );
 
         if (!resposta.ok) {
             throw new Error(`Erro HTTP: ${resposta.status}`);
@@ -1219,11 +1239,18 @@ async function verDados() {
 
         alert("Checklist enviado com sucesso!");
 
+        
+        limparFormulario();
+
     } catch (erro) {
         console.error("Erro ao enviar o checklist:", erro);
-        alert("Não foi possível enviar o checklist. Verifique a conexão e o webhook.");
-    }
 
-    mostrarForm()
+        alert(
+            "Não foi possível enviar o checklist. " +
+            "Verifique a conexão e o webhook."
+        );
+    }
 }
+
+
 
