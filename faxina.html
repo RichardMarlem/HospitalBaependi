@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
+        <a href="/index.html"><img src="/assets/img/logo-horizontal.png" alt="Logo Hospital"></a>
         <nav>
             <a href="/index.html"><span><i class="fa-solid fa-house"></i></span> Início</a>
             <a href="#"><span><i class="fa-solid fa-mattress-pillow"></i></span> Check-list Camareira</a>
@@ -22,7 +22,7 @@
             <h1>FAXINA</h1>
             <div class="informacoes_controle">
                 <div class="dados_controle">
-                    <label for="setor">Setor/Ala:</label>
+                    <label for="setor"><i class="fa-solid fa-hospital"></i> Setor/Ala:</label>
                     <select name="setor" id="setor" onchange="mostrarForm()" required>
                         <option value="">Selecione</option>
                         <option value="Noturno">Noturno</option>
@@ -40,15 +40,18 @@
                     
                 </div>
                 <div class="dados_controle">
-                    <label for="nome">Responsável:</label>
+                    <label for="nome"><i class="fa-solid fa-user"></i> Responsável:</label>
                     <input type="text" id="nome" name="nome" placeholder="João Maria" required>
-                    <label for="data">Data:</label>
+                </div>
+                <div class="dados_controle">
+                    
+                    <label for="data"><i class="fa-solid fa-calendar-days"></i> Data Serviço:</label>
                     <input type="date" id="data" name="data" required>
                 </div>
             </div>
         </div>
         <div id="checklist">
-            <h1>Setor de Limpeza</h1>
+            <h1><i class="fa-solid fa-bucket"></i> Setor de Limpeza</h1>
             <p id="nomeSetor">
 
             </p>
