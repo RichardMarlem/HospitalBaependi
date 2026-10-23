@@ -44,6 +44,7 @@ function coletarDados() {
         salaRx: val("salaRx"),
         copaCentroImagens: val("copaCentroImagens"),
         copaCentroAdministrativo: val("copaCentroAdministrativo"),
+        observacaoNoturno: val("observacaoNoturno"),
 
         // --- SETOR: C-1 ---
         recepcaoC1: val("recepcaoC1"),
@@ -76,6 +77,7 @@ function coletarDados() {
         epiC1: val("epiC1"),
         consultorio03C1: val("consultorio03C1"),
         salaMedicosTiC1: val("salaMedicosTiC1"),
+        observacaoC1: val("observacaoC1"),
 
         // --- SETOR: A ---
         emodimanicaA: val("emodimanicaA"),
@@ -438,10 +440,10 @@ function mostrarForm(){
                     </select>
                 </div>
                 <div class="dados_checklist">
-                        <label for="observacaoA">
+                        <label for="observacaoNoturno">
                             OBSERVAÇÃO:
                         </label>
-                        <input type="text" name="observacaoA" id="observacaoA">
+                        <input type="text" name="observacaoNoturno" id="observacaoNoturno">
                 </div>
         `
     } else if (setores == 'c1') {
@@ -825,10 +827,10 @@ function mostrarForm(){
                         </select>
                     </div>
                     <div class="dados_checklist">
-                        <label for="observacaoA">
+                        <label for="observacaoC1">
                             OBSERVAÇÃO:
                         </label>
-                        <input type="text" name="observacaoA" id="observacaoA">
+                        <input type="text" name="observacaoC1" id="observacaoC1">
                     </div>
         `;
 
