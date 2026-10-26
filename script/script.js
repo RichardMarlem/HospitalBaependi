@@ -440,10 +440,12 @@ function mostrarForm(){
                     </select>
                 </div>
                 <div class="dados_checklist">
-                        <label for="observacaoNoturno">
-                            OBSERVAÇÃO:
-                        </label>
-                        <input type="text" name="observacaoNoturno" id="observacaoNoturno">
+                    <div class="textoObservacao">
+                        <label for="observacaoNoturno">Observação:</label>
+                        <textarea id="observacaoNoturno" name="observacaoNoturno" placeholder="Digite sua observação...">
+                        
+                        </textarea>
+                    </div>
                 </div>
         `
     } else if (setores == 'C-1') {
@@ -827,10 +829,12 @@ function mostrarForm(){
                         </select>
                     </div>
                     <div class="dados_checklist">
-                        <label for="observacaoC1">
-                            OBSERVAÇÃO:
-                        </label>
-                        <input type="text" name="observacaoC1" id="observacaoC1">
+                        <div class="textoObservacao">
+                            <label for="observacaoC1">Observação:</label>
+                            <textarea id="observacaoC1" name="observacaoC1" placeholder="Digite sua observação...">
+                        
+                            </textarea>
+                        </div>
                     </div>
         `;
 
@@ -1177,10 +1181,12 @@ function mostrarForm(){
                         </select>
                     </div>
                     <div class="dados_checklist">
-                        <label for="observacaoA">
-                            OBSERVAÇÃO:
-                        </label>
-                        <input type="text" name="observacaoA" id="observacaoA">
+                        <div class="textoObservacao">
+                            <label for="observacaoA">Observação:</label>
+                            <textarea id="observacaoA" name="observacaoA" placeholder="Digite sua observação...">
+                        
+                            </textarea>
+                        </div>
                     </div>
        
        ` 
