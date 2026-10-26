@@ -1217,7 +1217,7 @@ async function verDados() {
     const dados = coletarDados();
 
     if (!dados.setor || !dados.nome || !dados.data) {
-        alert("Preencha o setor, o nome e a data antes de registrar.");
+        alert("Preencha o Setor, o Nome e a Data antes de registrar.");
         return;
     }
 
@@ -1237,7 +1237,7 @@ async function verDados() {
             throw new Error(`Erro HTTP: ${resposta.status}`);
         }
 
-        alert("Checklist enviado com sucesso!");
+        alert("Cadastro Realizado!");
 
         
         limparFormulario();

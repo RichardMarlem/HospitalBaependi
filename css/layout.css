@@ -420,7 +420,7 @@ footer {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
         padding: 1.25rem;
-        width: 50rem;
+        width: 40rem;
         margin: 10rem auto auto auto;
     }
 
