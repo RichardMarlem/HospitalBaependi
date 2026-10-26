@@ -442,9 +442,7 @@ function mostrarForm(){
                 <div class="dados_checklist">
                     <div class="textoObservacao">
                         <label for="observacaoNoturno">Observação:</label>
-                        <textarea id="observacaoNoturno" name="observacaoNoturno" placeholder="Digite sua observação...">
-                        
-                        </textarea>
+                        <textarea id="observacaoNoturno" name="observacaoNoturno" placeholder="Digite sua observação..."></textarea>
                     </div>
                 </div>
         `
@@ -831,9 +829,7 @@ function mostrarForm(){
                     <div class="dados_checklist">
                         <div class="textoObservacao">
                             <label for="observacaoC1">Observação:</label>
-                            <textarea id="observacaoC1" name="observacaoC1" placeholder="Digite sua observação...">
-                        
-                            </textarea>
+                            <textarea id="observacaoC1" name="observacaoC1" placeholder="Digite sua observação..."></textarea>
                         </div>
                     </div>
         `;
@@ -1183,9 +1179,7 @@ function mostrarForm(){
                     <div class="dados_checklist">
                         <div class="textoObservacao">
                             <label for="observacaoA">Observação:</label>
-                            <textarea id="observacaoA" name="observacaoA" placeholder="Digite sua observação...">
-                        
-                            </textarea>
+                            <textarea id="observacaoA" name="observacaoA" placeholder="Digite sua observação..."></textarea>
                         </div>
                     </div>
        
