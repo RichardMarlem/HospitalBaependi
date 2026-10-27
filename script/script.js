@@ -107,6 +107,82 @@ function coletarDados() {
         salaCarneA: val("salaCarneA"),
         salaServicoSocialA: val("salaServicoSocialA"),
         observacaoA: val("observacaoA"),
+
+        // --- SETOR: B ---
+        postoEmergenciaB: val('postoEmergenciaB'),
+        expurgoEmergenciaB: val('expurgoEmergenciaB'),
+        expurgoLimpezaB: val('expurgoLimpezaB'),
+        banheiroFuncionarioB: val('banheiroFuncionarioB'),
+        corredorB: val('corredorB'),
+        quarto202B: val('quarto202B'),
+        quarto203B: val('quarto203B'),
+        quarto204B: val('quarto204B'),
+        quarto205B: val('quarto205B'),
+        quarto206B: val('quarto206B'),
+        quarto207B: val('quarto207B'),
+        quarto208B: val('quarto208B'),
+        quarto209B: val('quarto209B'),
+        quarto210B: val('quarto210B'),
+        quarto211B: val('quarto211B'),
+        quarto212B: val('quarto212B'),
+        quarto213B: val('quarto213B'),
+        quarto214B: val('quarto214B'),
+        quarto215B: val('quarto215B'),
+        limpezaGeladeiraB: val('limpezaGeladeiraB'),
+        ramapaJanelasB: val('ramapaJanelasB'),
+        depositoCadeirasMacasB: val('depositoCadeirasMacasB'),
+        epiB: val('epiB'),
+        observacaoB: val("observacaoB"),
+
+        // --- SETOR: D ---
+
+        copaD: val('copaD'),
+        areaExternaD: val('areaExternaD'),
+        tendaTriagemD: val('tendaTriagemD'),
+        salaObservacaoD: val('salaObservacaoD'),
+        rampaD: val('rampaD'),
+        limpezaMobiliariosD: val('limpezaMobiliariosD'),
+        lavarLixeirasD: val('lavarLixeirasD'),
+        retirarResiduosD: val('retirarResiduosD'),
+        epiD: val('epiD'),
+        observacaoD: val("observacaoD"),
+        
+        // --- SETOR: E --- 
+        postoEnfermagemE: val('postoEnfermagemE'),
+        copaE: val('copaE'),
+        roupariaE: val('roupariaE'),
+        salaGinecologicaE: val('salaGinecologicaE'),
+        bercarioE: val('bercarioE'),
+        farmaciaE: val('farmaciaE'),
+        setorComprasE: val('setorComprasE'),
+        depositoFarmacia1E: val('depositoFarmacia1E'),
+        depositoFarmacia2E: val('depositoFarmacia2E'),
+        depositoFarmacia3E: val('depositoFarmacia3E'),
+        salaFarmaceuticoE: val('salaFarmaceuticoE'),
+        banheiroFuncionariosE: val('banheiroFuncionariosE'),
+        quarto404E: val('quarto404E'),
+        quarto405E: val('quarto405E'),
+        quarto406E: val('quarto406E'),
+        quarto407E: val('quarto407E'),
+        quarto408E: val('quarto408E'),
+        quarto409E: val('quarto409E'),
+        quarto410E: val('quarto410E'),
+        quarto411E: val('quarto411E'),
+        quarto412E: val('quarto412E'),
+        quarto413E: val('quarto413E'),
+        quarto414E: val('quarto414E'),
+        quarto415E: val('quarto415E'),
+        quarto416E: val('quarto416E'),
+        quarto417E: val('quarto417E'),
+        quarto418E: val('quarto418E'),
+        areaExternaE: val('areaExternaE'),
+        escadaE: val('escadaE'),
+        corredorE: val('corredorE'),
+        expurgoEnfermagemE: val('expurgoEnfermagemE'),
+        expurgoLimpezaE: val('expurgoLimpezaE'),
+        depositoCadeirasMacasE: val('depositoCadeirasMacasE'),
+        epiE: val('epiE'),
+        observacaoE: val('observacaoE'),
         
     };
 }
@@ -1183,8 +1259,775 @@ function mostrarForm(){
                         </div>
                     </div>
        
-       ` 
+       ` ;
+    } else if (setores == 'B'){
+        textoSetor.innerHTML = `${setores}`;
+
+        formulario.innerHTML = `
+            <div class="dados_checklist">
+                        <label for="postoEmergenciaB">Postinho de Enfermagem:</label>
+                        <select name="postoEmergenciaB" id="postoEmergenciaB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="expurgoEmergenciaB">Expurgo da Enfermagem:</label>
+                        <select name="expurgoEmergenciaB" id="expurgoEmergenciaB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="expurgoLimpezaB">Expurgo da limpeza:</label>
+                        <select name="expurgoLimpezaB" id="expurgoLimpezaB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="banheiroFuncionarioB">Banheiro dos Funcionários:</label>
+                        <select name="banheiroFuncionarioB" id="banheiroFuncionarioB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto202B">Quarto: 202:</label>
+                        <select name="quarto202B" id="quarto202B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto203B">Quarto: 203:</label>
+                        <select name="quarto203B" id="quarto203B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto204B">Quarto: 204:</label>
+                        <select name="quarto204B" id="quarto204B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto205B">Quarto: 205:</label>
+                        <select name="quarto205B" id="quarto205B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto206B">Quarto: 206:</label>
+                        <select name="quarto206B" id="quarto206B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto207B">Quarto: 207:</label>
+                        <select name="quarto207B" id="quarto207B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto208B">Quarto: 208:</label>
+                        <select name="quarto208B" id="quarto208B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto209B">Quarto: 209:</label>
+                        <select name="quarto209B" id="quarto209B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto210B">Quarto: 210:</label>
+                        <select name="quarto210B" id="quarto210B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto211B">Quarto: 211:</label>
+                        <select name="quarto211B" id="quarto211B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto212B">Quarto: 212:</label>
+                        <select name="quarto212B" id="quarto212B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto213B">Quarto: 213:</label>
+                        <select name="quarto213B" id="quarto213B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto214B">Quarto: 214:</label>
+                        <select name="quarto214B" id="quarto214B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="quarto215B">Quarto: 215:</label>
+                        <select name="quarto215B" id="quarto215B">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="corredorB">Corredor:</label>
+                        <select name="corredorB" id="corredorB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="limpezaGeladeiraB">Limpeza da geladeira:</label>
+                        <select name="limpezaGeladeiraB" id="limpezaGeladeiraB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="ramapaJanelasB">Rampa/janelas do corredor:</label>
+                        <select name="ramapaJanelasB" id="ramapaJanelasB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="depositoCadeirasMacasB">Deposito das cadeiras de rodas e  macas:</label>
+                        <select name="depositoCadeirasMacasB" id="depositoCadeirasMacasB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <label for="epiB">EPI’s:</label>
+                        <select name="epiB" id="epiB">
+                            <option value="">Selecione</option>
+                            <option value="Limpeza Diária">Limpeza Diária</option>
+                            <option value="Limpeza Quartos">Limpeza Quartos</option>
+                            <option value="Limpeza Terminal">Limpeza Terminal</option>
+                            <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</ option>
+                            <option value="Noturno">Noturno</option>
+                        </select>
+                    </div>
+                    <div class="dados_checklist">
+                        <div class="textoObservacao">
+                            <label for="observacaoB">Observação:</label>
+                            <textarea id="observacaoB" name="observacaoB" placeholder="Digite sua observação..."></textarea>
+                        </div>
+                    </div>
+
+        
+        `;
+    
+    }   else if (setores == 'D'){
+        textoSetor.innerHTML = `${setores}`
+
+        formulario.innerHTML = `
+                <div class="dados_checklist">
+                    <label for="copaD">Copa:</label>
+                    <select name="copaD" id="copaD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="areaExternaD">Área externa:</label>
+                    <select name="areaExternaD" id="areaExternaD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="tendaTriagemD">Tenda de triagem:</label>
+                    <select name="tendaTriagemD" id="tendaTriagemD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="salaObservacaoD">Sala de observação:</label>
+                    <select name="salaObservacaoD" id="salaObservacaoD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="rampaD">Rampa:</label>
+                    <select name="rampaD" id="rampaD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="limpezaMobiliariosD">Limpeza nos mobiliários:</label>
+                    <select name="limpezaMobiliariosD" id="limpezaMobiliariosD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="lavarLixeirasD">Lavar lixeiras:</label>
+                    <select name="lavarLixeirasD" id="lavarLixeirasD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="retirarResiduosD">Retirar os resíduos:</label>
+                    <select name="retirarResiduosD" id="retirarResiduosD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="epiD">Epi's:</label>
+                    <select name="epiD" id="epiD">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div> 
+                <div class="dados_checklist">
+                    <div class="textoObservacao">
+                        <label for="observacaoD">Observação:</label>
+                        <textarea id="observacaoD" name="observacaoD" placeholder="Digite sua observação..."></textarea>
+                    </div>
+                </div>
+        `
+    } 
+    
+    else if (setores == 'E') {
+        textoSetor.innerHTML = `${setores}`;
+        
+        formulario.innerHTML = `
+            <div class="dados_checklist">
+                    <label for="postoEnfermagemE">Postinho de enfermagem:</label>
+                    <select name="postoEnfermagemE" id="postoEnfermagemE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="copaE">Copa:</label>
+                    <select name="copaE" id="copaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="roupariaE">Rouparia:</label>
+                    <select name="roupariaE" id="roupariaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="salaGinecologicaE">Sala ginecológica:</label>
+                    <select name="salaGinecologicaE" id="salaGinecologicaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="bercarioE">Berçário:</label>
+                    <select name="bercarioE" id="bercarioE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="farmaciaE">Farmácia:</label>
+                    <select name="farmaciaE" id="farmaciaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="setorComprasE">Setor de compras:</label>
+                    <select name="setorComprasE" id="setorComprasE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="depositoFarmacia1E">Deposito da farmácia I:</label>
+                    <select name="depositoFarmacia1E" id="depositoFarmacia1E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="depositoFarmacia2E">Deposito da farmácia II:</label>
+                    <select name="depositoFarmacia2E" id="depositoFarmacia2E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="depositoFarmacia3E">Deposito da farmácia III:</label>
+                    <select name="depositoFarmacia3E" id="depositoFarmacia3E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="salaFarmaceuticoE">Sala do Farmacêutico:</label>
+                    <select name="salaFarmaceuticoE" id="salaFarmaceuticoE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="banheiroFuncionariosE">Banheiro dos funcionários:</label>
+                    <select name="banheiroFuncionariosE" id="banheiroFuncionariosE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto404E">Quarto: 404:</label>
+                    <select name="quarto404E" id="quarto404E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto405E">Quarto: 405:</label>
+                    <select name="quarto405E" id="quarto405E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto406E">Quarto: 406:</label>
+                    <select name="quarto406E" id="quarto406E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto407E">Quarto: 407:</label>
+                    <select name="quarto407E" id="quarto407E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto408E">Quarto: 408:</label>
+                    <select name="quarto408E" id="quarto408E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto409E">Quarto: 409:</label>
+                    <select name="quarto409E" id="quarto409E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto410E">Quarto: 410:</label>
+                    <select name="quarto410E" id="quarto410E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto411E">Quarto: 411:</label>
+                    <select name="quarto411E" id="quarto411E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto412E">Quarto: 412:</label>
+                    <select name="quarto412E" id="quarto412E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto413E">Quarto: 413:</label>
+                    <select name="quarto413E" id="quarto413E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto414E">Quarto: 414:</label>
+                    <select name="quarto414E" id="quarto414E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto415E">Quarto: 415:</label>
+                    <select name="quarto415E" id="quarto415E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto416E">Quarto: 416:</label>
+                    <select name="quarto416E" id="quarto416E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto417E">Quarto: 417:</label>
+                    <select name="quarto417E" id="quarto417E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="quarto418E">Quarto: 418:</label>
+                    <select name="quarto418E" id="quarto418E">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="areaExternaE">Área externa:</label>
+                    <select name="areaExternaE" id="areaExternaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="escadaE">Escada:</label>
+                    <select name="escadaE" id="escadaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="corredorE">Corredor:</label>
+                    <select name="corredorE" id="corredorE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="expurgoEnfermagemE">Expurgo de enfermagem:</label>
+                    <select name="expurgoEnfermagemE" id="expurgoEnfermagemE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="expurgoLimpezaE">Expurgo de limpeza:</label>
+                    <select name="expurgoLimpezaE" id="expurgoLimpezaE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="depositoCadeirasMacasE">Deposito das cadeiras de rodas e macas:</label>
+                    <select name="depositoCadeirasMacasE" id="depositoCadeirasMacasE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <label for="epiE">EPI’S:</label>
+                    <select name="epiE" id="epiE">
+                        <option value="">Selecione</option>
+                        <option value="Limpeza Diária">Limpeza Diária</option>
+                        <option value="Limpeza Quartos">Limpeza Quartos</option>
+                        <option value="Limpeza Terminal">Limpeza Terminal</option>
+                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
+                        <option value="Noturno">Noturno</option>
+                    </select>
+                </div>
+                <div class="dados_checklist">
+                    <div class="textoObservacao">
+                        <label for="observacaoE">Observação:</label>
+                        <textarea id="observacaoE" name="observacaoE" placeholder="Digite sua observação..."></textarea>
+                    </div>
+                </div>
+        
+        `;
     }
+
+    
      else {
         formulario.innerHTML = `
             <div class="logoHospital">
