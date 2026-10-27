@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,12 +9,13 @@
     <script src="https://kit.fontawesome.com/6621c552df.js" crossorigin="anonymous"></script>
     <title>Check-list Camareira</title>
 </head>
+
 <body>
     <header>
         <a href="/index.html"><img src="/assets/img/logo-horizontal.png" alt="Logo Hospital"></a>
         <nav>
             <a href="/index.html"><span><i class="fa-solid fa-house"></i></span> Início</a>
-            <a href="#"><span><i class="fa-solid fa-mattress-pillow"></i></span> Check-list Camareira</a>
+            <a href="/faxina.html"><span><i class="fa-solid fa-bucket"></i></span> Check-list Limpeza</a>
             <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span> Check-list Cronograma</a>
         </nav>
     </header>
@@ -26,14 +28,14 @@
                     <input type="text" name="leito" id="leito">
                 </div>
                 <div class="dados_controle">
-                    
+
                 </div>
                 <div class="dados_controle">
                     <label for="nome"><i class="fa-solid fa-user"></i> Responsável:</label>
                     <input type="text" id="nome" name="nome" placeholder="João Maria" required>
                 </div>
                 <div class="dados_controle">
-                    
+
                     <label for="data"><i class="fa-solid fa-calendar-days"></i> Data Serviço:</label>
                     <input type="date" id="data" name="data" required>
                 </div>
@@ -47,425 +49,807 @@
             <form id="formulario">
                 <div class="dados-checklist">
                     <label for="armariosGavetas">Armário/Gavetas (Dentro e Fora)</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="armariosGavetas" id="armariosGavetas">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="irregularidadeArmarioGaveta1" id="irregularidadeArmarioGaveta1"> Ficaram Objetos
-                    <input type="checkbox" name="irregularidadeArmarioGaveta2" id="irregularidadeArmarioGaveta2"> Sujo
-                    <input type="checkbox" name="irregularidadeArmarioGaveta3" id="irregularidadeArmarioGaveta3"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="irregularidadeArmarioGaveta1">
+                            <input type="checkbox" name="irregularidadeArmarioGaveta1"
+                                id="irregularidadeArmarioGaveta1">
+                            Ficaram Objetos
+                        </label>
+                        <label for="irregularidadeArmarioGaveta2">
+                            <input type="checkbox" name="irregularidadeArmarioGaveta2"
+                                id="irregularidadeArmarioGaveta2">
+                            Sujo
+                        </label>
+                        <label for="irregularidadeArmarioGaveta3">
+                            <input type="checkbox" name="irregularidadeArmarioGaveta3"
+                                id="irregularidadeArmarioGaveta3">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="cama">Cama</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="cama" id="cama">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="cama1" id="cama1"> Suja
-                    <input type="checkbox" name="cama2" id="cama2"> Danificada
-                    <input type="checkbox" name="cama3" id="cama3"> Arrumada
+
+                    <div class="opcoes-checkbox">
+                        <label for="cama1">
+                            <input type="checkbox" name="cama1" id="cama1">
+                            Suja
+                        </label>
+                        <label for="cama2">
+                            <input type="checkbox" name="cama2" id="cama2">
+                            Danificada
+                        </label>
+                        <label for="cama3">
+                            <input type="checkbox" name="cama3" id="cama3">
+                            Arrumada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="piasRalo">Pias/Ralos</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="piasRalo" id="piasRalo">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="piasRalo1" id="piasRalo1"> Sujo
-                    <input type="checkbox" name="piasRalo2" id="piasRalo2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="piasRalo1">
+                            <input type="checkbox" name="piasRalo1" id="piasRalo1">
+                            Sujo
+                        </label>
+                        <label for="piasRalo2">
+                            <input type="checkbox" name="piasRalo2" id="piasRalo2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="dispensers">Dispensers</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="dispensers" id="dispensers">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="dispensers1" id="dispensers1"> Sujo
-                    <input type="checkbox" name="dispensers2" id="dispensers2"> Abastecidos
-                    <input type="checkbox" name="dispensers3" id="dispensers3"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="dispensers1">
+                            <input type="checkbox" name="dispensers1" id="dispensers1">
+                            Sujo
+                        </label>
+                        <label for="dispensers2">
+                            <input type="checkbox" name="dispensers2" id="dispensers2">
+                            Abastecidos
+                        </label>
+                        <label for="dispensers3">
+                            <input type="checkbox" name="dispensers3" id="dispensers3">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="cortina">Cortina</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="cortina" id="cortina">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="cortina1" id="cortina1"> Suja
-                    <input type="checkbox" name="cortina2" id="cortina2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="cortina1">
+                            <input type="checkbox" name="cortina1" id="cortina1">
+                            Suja
+                        </label>
+                        <label for="cortina2">
+                            <input type="checkbox" name="cortina2" id="cortina2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="reguaGases">Régua de Gases</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="reguaGases" id="reguaGases">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="reguaGases1" id="reguaGases1"> Suja
-                    <input type="checkbox" name="reguaGases2" id="reguaGases2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="reguaGases1">
+                            <input type="checkbox" name="reguaGases1" id="reguaGases1">
+                            Suja
+                        </label>
+                        <label for="reguaGases2">
+                            <input type="checkbox" name="reguaGases2" id="reguaGases2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="sofaPoltrona">Sofá/Poltronas</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="sofaPoltrona" id="sofaPoltrona">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="sofaPoltrona1" id="sofaPoltrona1"> Sujo
-                    <input type="checkbox" name="sofaPoltrona2" id="sofaPoltrona2"> Danificado
-                    <input type="checkbox" name="sofaPoltrona3" id="sofaPoltrona3"> Arrumado
+
+                    <div class="opcoes-checkbox">
+                        <label for="sofaPoltrona1">
+                            <input type="checkbox" name="sofaPoltrona1" id="sofaPoltrona1">
+                            Sujo
+                        </label>
+                        <label for="sofaPoltrona2">
+                            <input type="checkbox" name="sofaPoltrona2" id="sofaPoltrona2">
+                            Danificado
+                        </label>
+                        <label for="sofaPoltrona3">
+                            <input type="checkbox" name="sofaPoltrona3" id="sofaPoltrona3">
+                            Arrumado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="frigobar">Frigobar (Dentro e Fora)</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="frigobar" id="frigobar">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="frigobar1" id="frigobar1"> Sujo
-                    <input type="checkbox" name="frigobar2" id="frigobar2"> Danificado
-                    <input type="checkbox" name="frigobar3" id="frigobar3"> Vazio
+
+                    <div class="opcoes-checkbox">
+                        <label for="frigobar1">
+                            <input type="checkbox" name="frigobar1" id="frigobar1">
+                            Sujo
+                        </label>
+                        <label for="frigobar2">
+                            <input type="checkbox" name="frigobar2" id="frigobar2">
+                            Danificado
+                        </label>
+                        <label for="frigobar3">
+                            <input type="checkbox" name="frigobar3" id="frigobar3">
+                            Vazio
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="aparelhosTelefone">Aparelhos de Telefone</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="aparelhosTelefone" id="aparelhosTelefone">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="aparelhosTelefone1" id="aparelhosTelefone1"> Sujo
-                    <input type="checkbox" name="aparelhosTelefone2" id="aparelhosTelefone2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="aparelhosTelefone1">
+                            <input type="checkbox" name="aparelhosTelefone1" id="aparelhosTelefone1">
+                            Sujo
+                        </label>
+                        <label for="aparelhosTelefone2">
+                            <input type="checkbox" name="aparelhosTelefone2" id="aparelhosTelefone2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
-                    <label for="aparelhosTelefone">TV/Controle Remoto/Pilhas</label>
-                    <h1>Satisfatório:</h1>
+                    <label for="tvControlePilhas">TV/Controle Remoto/Pilhas</label>
+                    <h2>Satisfatório:</h2>
                     <select name="tvControlePilhas" id="tvControlePilhas">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="tvControlePilhas1" id="tvControlePilhas1"> Suja
-                    <input type="checkbox" name="tvControlePilhas2" id="tvControlePilhas2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="tvControlePilhas1">
+                            <input type="checkbox" name="tvControlePilhas1" id="tvControlePilhas1">
+                            Suja
+                        </label>
+                        <label for="tvControlePilhas2">
+                            <input type="checkbox" name="tvControlePilhas2" id="tvControlePilhas2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="tvSmart">TV (Smart) – Aplicativos Deslogados</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="tvSmart" id="tvSmart">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="tvSmart1" id="tvSmart1">Qual?
-                    <input type="text" name="tvSmart2" id="tvSmart2" placeholder="Informe qual aplicativo...">
+
+                    <div class="opcoes-checkbox">
+                        <label for="tvSmart2">Qual?</label>
+                        <input type="text" name="tvSmart2" id="tvSmart2" placeholder="Informe qual aplicativo...">
+                    </div>
+
+
                 </div>
+
                 <div class="dados-checklist">
                     <label for="suportes">Suportes</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="suportes" id="suportes">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="suportes1" id="suportes1"> Sujo
-                    <input type="checkbox" name="suportes2" id="suportes2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="suportes1">
+                            <input type="checkbox" name="suportes1" id="suportes1">
+                            Sujo
+                        </label>
+                        <label for="suportes2">
+                            <input type="checkbox" name="suportes2" id="suportes2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="chao">Chão</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="chao" id="chao">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="chao1" id="chao1"> Sujo
-                    <input type="checkbox" name="chao2" id="chao2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="chao1">
+                            <input type="checkbox" name="chao1" id="chao1">
+                            Sujo
+                        </label>
+                        <label for="chao2">
+                            <input type="checkbox" name="chao2" id="chao2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="janelas">Janelas</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="janelas" id="janelas">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="janelas1" id="janelas1"> Suja
-                    <input type="checkbox" name="janelas2" id="janelas2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="janelas1">
+                            <input type="checkbox" name="janelas1" id="janelas1">
+                            Suja
+                        </label>
+                        <label for="janelas2">
+                            <input type="checkbox" name="janelas2" id="janelas2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="teto">Teto</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="teto" id="teto">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="teto1" id="teto1"> Suja
-                    <input type="checkbox" name="teto2" id="teto2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="teto1">
+                            <input type="checkbox" name="teto1" id="teto1">
+                            Suja
+                        </label>
+                        <label for="teto2">
+                            <input type="checkbox" name="teto2" id="teto2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="paredes">Paredes</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="paredes" id="paredes">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="paredes1" id="paredes1"> Suja
-                    <input type="checkbox" name="paredes2" id="paredes2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="paredes1">
+                            <input type="checkbox" name="paredes1" id="paredes1">
+                            Suja
+                        </label>
+                        <label for="paredes2">
+                            <input type="checkbox" name="paredes2" id="paredes2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="tomadas">Tomadas</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="tomadas" id="tomadas">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="tomadas1" id="tomadas1"> Suja
-                    <input type="checkbox" name="tomadas2" id="tomadas2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="tomadas1">
+                            <input type="checkbox" name="tomadas1" id="tomadas1">
+                            Suja
+                        </label>
+                        <label for="tomadas2">
+                            <input type="checkbox" name="tomadas2" id="tomadas2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="interruptores">Interruptores</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="interruptores" id="interruptores">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="interruptores1" id="interruptores1"> Sujos
-                    <input type="checkbox" name="interruptores2" id="interruptores2"> Danificados
+
+                    <div class="opcoes-checkbox">
+                        <label for="interruptores1">
+                            <input type="checkbox" name="interruptores1" id="interruptores1">
+                            Sujos
+                        </label>
+                        <label for="interruptores2">
+                            <input type="checkbox" name="interruptores2" id="interruptores2">
+                            Danificados
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="registroAguaTemperatura">Registro de Água e Temperatura</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="registroAguaTemperatura" id="registroAguaTemperatura">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="registroAguaTemperatura1" id="registroAguaTemperatura1"> Sujo
-                    <input type="checkbox" name="registroAguaTemperatura2" id="registroAguaTemperatura2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="registroAguaTemperatura1">
+                            <input type="checkbox" name="registroAguaTemperatura1" id="registroAguaTemperatura1">
+                            Sujo
+                        </label>
+                        <label for="registroAguaTemperatura2">
+                            <input type="checkbox" name="registroAguaTemperatura2" id="registroAguaTemperatura2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="espelho">Espelho</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="espelho" id="espelho">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="espelho1" id="espelho1"> Sujo
-                    <input type="checkbox" name="espelho2" id="espelho2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="espelho1">
+                            <input type="checkbox" name="espelho1" id="espelho1">
+                            Sujo
+                        </label>
+                        <label for="espelho2">
+                            <input type="checkbox" name="espelho2" id="espelho2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="suporteToalha">Suporte para Toalha</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="suporteToalha" id="suporteToalha">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="suporteToalha1" id="suporteToalha1"> Sujo
-                    <input type="checkbox" name="suporteToalha2" id="suporteToalha2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="suporteToalha1">
+                            <input type="checkbox" name="suporteToalha1" id="suporteToalha1">
+                            Sujo
+                        </label>
+                        <label for="suporteToalha2">
+                            <input type="checkbox" name="suporteToalha2" id="suporteToalha2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="suporteAmenidades">Suporte para Amenidades</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="suporteAmenidades" id="suporteAmenidades">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="suporteAmenidades1" id="suporteAmenidades1"> Sujo
-                    <input type="checkbox" name="suporteAmenidades2" id="suporteAmenidades2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="suporteAmenidades1">
+                            <input type="checkbox" name="suporteAmenidades1" id="suporteAmenidades1">
+                            Sujo
+                        </label>
+                        <label for="suporteAmenidades2">
+                            <input type="checkbox" name="suporteAmenidades2" id="suporteAmenidades2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="descargaVaso">Descarga/Vaso Sanitário</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="descargaVaso" id="descargaVaso">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="descargaVaso1" id="descargaVaso1"> Suja
-                    <input type="checkbox" name="descargaVaso2" id="descargaVaso2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="descargaVaso1">
+                            <input type="checkbox" name="descargaVaso1" id="descargaVaso1">
+                            Suja
+                        </label>
+                        <label for="descargaVaso2">
+                            <input type="checkbox" name="descargaVaso2" id="descargaVaso2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="corrimao">Corrimão</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="corrimao" id="corrimao">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="corrimao1" id="corrimao1"> Sujo
-                    <input type="checkbox" name="corrimao2" id="corrimao2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="corrimao1">
+                            <input type="checkbox" name="corrimao1" id="corrimao1">
+                            Sujo
+                        </label>
+                        <label for="corrimao2">
+                            <input type="checkbox" name="corrimao2" id="corrimao2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="chuveiro">Chuveiro</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="chuveiro" id="chuveiro">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="chuveiro1" id="chuveiro1"> Sujo
-                    <input type="checkbox" name="chuveiro2" id="chuveiro2"> Danificado
-                    <input type="checkbox" name="chuveiro3" id="chuveiro3"> Registro Fechado
+
+                    <div class="opcoes-checkbox">
+                        <label for="chuveiro1">
+                            <input type="checkbox" name="chuveiro1" id="chuveiro1">
+                            Sujo
+                        </label>
+                        <label for="chuveiro2">
+                            <input type="checkbox" name="chuveiro2" id="chuveiro2">
+                            Danificado
+                        </label>
+                        <label for="chuveiro3">
+                            <input type="checkbox" name="chuveiro3" id="chuveiro3">
+                            Registro Fechado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="placaSinalizacao">Placas de Sinalização</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="placaSinalizacao" id="placaSinalizacao">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="placaSinalizacao1" id="placaSinalizacao1"> Suja
-                    <input type="checkbox" name="placaSinalizacao2" id="placaSinalizacao2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="placaSinalizacao1">
+                            <input type="checkbox" name="placaSinalizacao1" id="placaSinalizacao1">
+                            Suja
+                        </label>
+                        <label for="placaSinalizacao2">
+                            <input type="checkbox" name="placaSinalizacao2" id="placaSinalizacao2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="criadoMudo">Criado Mudo</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="criadoMudo" id="criadoMudo">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="criadoMudo1" id="criadoMudo1"> Sujo
-                    <input type="checkbox" name="criadoMudo2" id="criadoMudo2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="criadoMudo1">
+                            <input type="checkbox" name="criadoMudo1" id="criadoMudo1">
+                            Sujo
+                        </label>
+                        <label for="criadoMudo2">
+                            <input type="checkbox" name="criadoMudo2" id="criadoMudo2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
-                    <label for="bandeijaRefeicao">Bandejas de Refeição</label>
-                    <h1>Satisfatório:</h1>
+                    <label for="bandejaRefeicao">Bandejas de Refeição</label>
+                    <h2>Satisfatório:</h2>
                     <select name="bandejaRefeicao" id="bandejaRefeicao">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="bandejaRefeicao1" id="bandejaRefeicao1"> Suja
-                    <input type="checkbox" name="bandejaRefeicao2" id="bandejaRefeicao2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="bandejaRefeicao1">
+                            <input type="checkbox" name="bandejaRefeicao1" id="bandejaRefeicao1">
+                            Suja
+                        </label>
+                        <label for="bandejaRefeicao2">
+                            <input type="checkbox" name="bandejaRefeicao2" id="bandejaRefeicao2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="porta">Porta</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="porta" id="porta">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="porta1" id="porta1"> Suja
-                    <input type="checkbox" name="porta2" id="porta2"> Danificada
+
+                    <div class="opcoes-checkbox">
+                        <label for="porta1">
+                            <input type="checkbox" name="porta1" id="porta1">
+                            Suja
+                        </label>
+                        <label for="porta2">
+                            <input type="checkbox" name="porta2" id="porta2">
+                            Danificada
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="torneiras">Torneiras</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="torneiras" id="torneiras">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="torneiras1" id="torneiras1"> Suja
-                    <input type="checkbox" name="torneiras2" id="torneiras2"> Danificada
-                    <input type="checkbox" name="torneiras3" id="torneiras3"> Vazando Água
+
+                    <div class="opcoes-checkbox">
+                        <label for="torneiras1">
+                            <input type="checkbox" name="torneiras1" id="torneiras1">
+                            Suja
+                        </label>
+                        <label for="torneiras2">
+                            <input type="checkbox" name="torneiras2" id="torneiras2">
+                            Danificada
+                        </label>
+                        <label for="torneiras3">
+                            <input type="checkbox" name="torneiras3" id="torneiras3">
+                            Vazando Água
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="luzes">Luzes</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="luzes" id="luzes">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="luzes1" id="luzes1"> Danificadas
+
+                    <div class="opcoes-checkbox">
+                        <label for="luzes1">
+                            <input type="checkbox" name="luzes1" id="luzes1">
+                            Danificadas
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="painelDigitalCamas">Painel Digital das Camas</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="painelDigitalCamas" id="painelDigitalCamas">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="painelDigitalCamas1" id="painelDigitalCamas1"> Sujo
-                    <input type="checkbox" name="painelDigitalCamas2" id="painelDigitalCamas2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="painelDigitalCamas1">
+                            <input type="checkbox" name="painelDigitalCamas1" id="painelDigitalCamas1">
+                            Sujo
+                        </label>
+                        <label for="painelDigitalCamas2">
+                            <input type="checkbox" name="painelDigitalCamas2" id="painelDigitalCamas2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="diretorioInternacao">Diretório de Internação</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="diretorioInternacao" id="diretorioInternacao">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="diretorioInternacao1" id="diretorioInternacao1"> Sujo
-                    <input type="checkbox" name="diretorioInternacao2" id="diretorioInternacao2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="diretorioInternacao1">
+                            <input type="checkbox" name="diretorioInternacao1" id="diretorioInternacao1">
+                            Sujo
+                        </label>
+                        <label for="diretorioInternacao2">
+                            <input type="checkbox" name="diretorioInternacao2" id="diretorioInternacao2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="paraPeito">Para Peito</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="paraPeito" id="paraPeito">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="paraPeito1" id="paraPeito1"> Sujo
+
+                    <div class="opcoes-checkbox">
+                        <label for="paraPeito1">
+                            <input type="checkbox" name="paraPeito1" id="paraPeito1">
+                            Sujo
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="secadorCabelo">Secador de Cabelo</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="secadorCabelo" id="secadorCabelo">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="secadorCabelo1" id="secadorCabelo1"> Sujo
-                    <input type="checkbox" name="secadorCabelo2" id="secadorCabelo2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="secadorCabelo1">
+                            <input type="checkbox" name="secadorCabelo1" id="secadorCabelo1">
+                            Sujo
+                        </label>
+                        <label for="secadorCabelo2">
+                            <input type="checkbox" name="secadorCabelo2" id="secadorCabelo2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="secadorCabelo">Secador de Cabelo</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="secadorCabelo" id="secadorCabelo">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="secadorCabelo1" id="secadorCabelo1"> Sujo
-                    <input type="checkbox" name="secadorCabelo2" id="secadorCabelo2"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="secadorCabelo1">
+                            <input type="checkbox" name="secadorCabelo1" id="secadorCabelo1">
+                            Sujo
+                        </label>
+                        <label for="secadorCabelo2">
+                            <input type="checkbox" name="secadorCabelo2" id="secadorCabelo2">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados-checklist">
                     <label for="arCondicionado">Ar Condicionado</label>
-                    <h1>Satisfatório:</h1>
+                    <h2>Satisfatório:</h2>
                     <select name="arCondicionado" id="arCondicionado">
                         <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-                    <input type="checkbox" name="arCondicionado1" id="arCondicionado1"> Danificado
+
+                    <div class="opcoes-checkbox">
+                        <label for="arCondicionado1">
+                            <input type="checkbox" name="arCondicionado1" id="arCondicionado1">
+                            Danificado
+                        </label>
+                    </div>
                 </div>
+
                 <div class="dados_checklist">
                     <div class="textoObservacao">
                         <label for="observacaoNoturno">Observação:</label>
-                        <textarea id="observacaoNoturno" name="observacaoNoturno" placeholder="Digite sua observação..."></textarea>
+                        <textarea id="observacaoNoturno" name="observacaoNoturno"
+                            placeholder="Digite sua observação..."></textarea>
                     </div>
-                </div>                             
+                </div>
             </form>
         </div>
         <div class="registrar">
-            <input type="submit" value="REGISTRAR SERVIÇO" onclick="verDados()"  >
+            <input type="submit" value="REGISTRAR SERVIÇO" onclick="verDados()">
         </div>
     </main>
     <footer>
@@ -473,8 +857,9 @@
             <h1>HOSPITAL DE BAEPENDI</h1>
             <p>Cônego Monte Raro</p>
         </div>
-        
+
     </footer>
     <script src="/script/script.js"></script>
 </body>
+
 </html>
