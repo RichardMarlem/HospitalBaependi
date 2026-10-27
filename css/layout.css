@@ -383,14 +383,13 @@ header nav a:hover {
     margin-top: 0.5rem;
 
     label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    cursor: pointer;
-    color: var(--color2);
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin-top: 1rem;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        color: var(--color2);
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin-top: 1rem;
     }
 }
 
