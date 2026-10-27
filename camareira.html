@@ -16,7 +16,7 @@
         <nav>
             <a href="/index.html"><span><i class="fa-solid fa-house"></i></span> Início</a>
             <a href="/faxina.html"><span><i class="fa-solid fa-bucket"></i></span> Check-list Limpeza</a>
-            <a href="#"><span><i class="fa-solid fa-calendar-days"></i></span> Check-list Cronograma</a>
+            <a href="/cronograma.html"><span><i class="fa-solid fa-calendar-days"></i></span> Check-list Cronograma</a>
         </nav>
     </header>
     <main class="lancarServicos">
@@ -31,13 +31,13 @@
 
                 </div>
                 <div class="dados_controle">
-                    <label for="nome"><i class="fa-solid fa-user"></i> Responsável:</label>
-                    <input type="text" id="nome" name="nome" placeholder="João Maria" required>
+                    <label for="nomeCamareira"><i class="fa-solid fa-user"></i> Responsável:</label>
+                    <input type="text" id="nomeCamareira" name="nomeCamareira" placeholder="João Maria" required>
                 </div>
                 <div class="dados_controle">
 
-                    <label for="data"><i class="fa-solid fa-calendar-days"></i> Data Serviço:</label>
-                    <input type="date" id="data" name="data" required>
+                    <label for="dataCamareira"><i class="fa-solid fa-calendar-days"></i> Data Serviço:</label>
+                    <input type="date" id="dataCamareira" name="dataCamareira" required>
                 </div>
             </div>
         </div>
@@ -849,7 +849,7 @@
             </form>
         </div>
         <div class="registrar">
-            <input type="submit" value="REGISTRAR SERVIÇO" onclick="verDados()">
+            <input type="button" value="REGISTRAR SERVIÇO" onclick="verDados()">
         </div>
     </main>
     <footer>
@@ -859,7 +859,7 @@
         </div>
 
     </footer>
-    <script src="/script/script.js"></script>
+    <script src="/script/camareira.js"></script>
 </body>
 
 </html>

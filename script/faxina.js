@@ -4,6 +4,7 @@ function val(id) {
   return el ? el.value.trim() : "";
 }
 
+
 function coletarDados() {
     return {
 
@@ -184,121 +185,7 @@ function coletarDados() {
         epiE: val('epiE'),
         observacaoE: val('observacaoE'),
 
-        // --- CHECK-LIST CAMAREIRA --- //
-
-        armariosGavetas: val('armariosGavetas'),
-        irregularidadeArmarioGaveta1: document.getElementById('irregularidadeArmarioGaveta1').checked,
-        irregularidadeArmarioGaveta2: document.getElementById('irregularidadeArmarioGaveta2').checked,
-        irregularidadeArmarioGaveta3: document.getElementById('irregularidadeArmarioGaveta3').checked,
-        cama: val('cama'),
-        cama1: document.getElementById('cama1').checked,
-        cama2: document.getElementById('cama2').checked,
-        cama3: document.getElementById('cama3').checked,
-        piasRalo: val('piasRalo'),
-        piasRalo1: document.getElementById('piasRalo1').checked,
-        piasRalo2: document.getElementById('piasRalo2').checked,
-        dispensers: val('dispensers'),
-        dispensers1: document.getElementById('dispensers1').checked,
-        dispensers2: document.getElementById('dispensers2').checked,
-        dispensers3: document.getElementById('dispensers3').checked,
-        cortina: val('cortina'),
-        cortina1: document.getElementById('cortina1').checked,
-        cortina2: document.getElementById('cortina2').checked,
-        reguaGases: val('reguaGases'),
-        reguaGases1: document.getElementById('reguaGases1').checked,
-        reguaGases2: document.getElementById('reguaGases2').checked,
-        sofaPoltrona: val('sofaPoltrona'),
-        sofaPoltrona1: document.getElementById('sofaPoltrona1').checked,
-        sofaPoltrona2: document.getElementById('sofaPoltrona2').checked,
-        sofaPoltrona3: document.getElementById('sofaPoltrona3').checked,
-        frigobar: val('frigobar'),
-        frigobar1: document.getElementById('frigobar1').checked,
-        frigobar2: document.getElementById('frigobar2').checked,
-        frigobar3: document.getElementById('frigobar3').checked,
-        aparelhosTelefone: val('aparelhosTelefone'),
-        aparelhosTelefone1: document.getElementById('aparelhosTelefone1').checked,
-        aparelhosTelefone2: document.getElementById('aparelhosTelefone2').checked,
-        tvControlePilhas: val('tvControlePilhas'),
-        tvControlePilhas1: document.getElementById('tvControlePilhas1').checked,
-        tvControlePilhas2: document.getElementById('tvControlePilhas2').checked,
-        tvSmart: val('tvSmart'),
-        tvSmart2: val('tvSmart2'),
-        suportes: val('suportes'),
-        suportes1: document.getElementById('suportes1').checked,
-        suportes2: document.getElementById('suportes2').checked,
-        chao: val('chao'),
-        chao1: document.getElementById('chao1').checked,
-        chao2: document.getElementById('chao2').checked,
-        janelas: val('janelas'),
-        janelas1: document.getElementById('janelas1').checked,
-        janelas2: document.getElementById('janelas2').checked,
-        teto: val('teto'),
-        teto1: document.getElementById('teto1').checked,
-        teto2: document.getElementById('teto2').checked,
-        paredes: val('paredes'),
-        paredes1: document.getElementById('paredes1').checked,
-        paredes2: document.getElementById('paredes2').checked,
-        tomadas: val('tomadas'),
-        tomadas1: document.getElementById('tomadas1').checked,
-        tomadas2: document.getElementById('tomadas2').checked,
-        interruptores: val('interruptores'),
-        interruptores1: document.getElementById('interruptores1').checked,
-        interruptores2: document.getElementById('interruptores2').checked,
-        registroAguaTemperatura: val('registroAguaTemperatura'),
-        registroAguaTemperatura1: document.getElementById('registroAguaTemperatura1').checked,
-        registroAguaTemperatura2: document.getElementById('registroAguaTemperatura2').checked,
-        espelho: val('espelho'),
-        espelho1: document.getElementById('espelho1').checked,
-        espelho2: document.getElementById('espelho2').checked,
-        suporteToalha: val('suporteToalha'),
-        suporteToalha1: document.getElementById('suporteToalha1').checked,
-        suporteToalha2: document.getElementById('suporteToalha2').checked,
-        suporteAmenidades: val('suporteAmenidades'),
-        suporteAmenidades1: document.getElementById('suporteAmenidades1').checked,
-        suporteAmenidades2: document.getElementById('suporteAmenidades2').checked,
-        descargaVaso: val('descargaVaso'),
-        descargaVaso1: document.getElementById('descargaVaso1').checked,
-        descargaVaso2: document.getElementById('descargaVaso2').checked,
-        corrimao: val('corrimao'),
-        corrimao1: document.getElementById('corrimao1').checked,
-        corrimao2: document.getElementById('corrimao2').checked,
-        chuveiro: val('chuveiro'),
-        chuveiro1: document.getElementById('chuveiro1').checked,
-        chuveiro2: document.getElementById('chuveiro2').checked,
-        chuveiro3: document.getElementById('chuveiro3').checked,
-        placaSinalizacao: val('placaSinalizacao'),
-        placaSinalizacao1: document.getElementById('placaSinalizacao1').checked,
-        placaSinalizacao2: document.getElementById('placaSinalizacao2').checked,
-        criadoMudo: val('criadoMudo'),
-        criadoMudo1: document.getElementById('criadoMudo1').checked,
-        criadoMudo2: document.getElementById('criadoMudo2').checked,
-        bandejaRefeicao: val('bandejaRefeicao'),
-        bandejaRefeicao1: document.getElementById('bandejaRefeicao1').checked,
-        bandejaRefeicao2: document.getElementById('bandejaRefeicao2').checked,
-        porta: val('porta'),
-        porta1: document.getElementById('porta1').checked,
-        porta2: document.getElementById('porta2').checked,
-        torneiras: val('torneiras'),
-        torneiras1: document.getElementById('torneiras1').checked,
-        torneiras2: document.getElementById('torneiras2').checked,
-        torneiras3: document.getElementById('torneiras3').checked,
-        luzes: val('luzes'),
-        luzes1: document.getElementById('luzes1').checked,
-        painelDigitalCamas: val('painelDigitalCamas'),
-        painelDigitalCamas1: document.getElementById('painelDigitalCamas1').checked,
-        painelDigitalCamas2: document.getElementById('painelDigitalCamas2').checked,
-        diretorioInternacao: val('diretorioInternacao'),
-        diretorioInternacao1: document.getElementById('diretorioInternacao1').checked,
-        diretorioInternacao2: document.getElementById('diretorioInternacao2').checked,
-        paraPeito: val('paraPeito'),
-        paraPeito1: document.getElementById('paraPeito1').checked,
-        secadorCabelo: val('secadorCabelo'),
-        secadorCabelo1: document.getElementById('secadorCabelo1').checked,
-        secadorCabelo2: document.getElementById('secadorCabelo2').checked,
-        arCondicionado: val('arCondicionado'),
-        arCondicionado1: document.getElementById('arCondicionado1').checked,
-        observacaoNoturno: val('observacaoNoturno')
-        
+       
     };
 }
 
@@ -2173,9 +2060,9 @@ function limparFormulario() {
 
 async function verDados() {
     const dados = coletarDados();
-
+    
     if (!dados.setor || !dados.nome || !dados.data) {
-        alert("Preencha o Setor, o Nome e a Data antes de registrar.");
+        alert("Preencha o setor, o nome e a data antes de registrar.");
         return;
     }
 

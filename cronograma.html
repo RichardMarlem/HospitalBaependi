@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/6621c552df.js" crossorigin="anonymous"></script>
+    <title>Check-list Cronograma</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/assets/img/logo-horizontal.png" alt="Logo Hospital"></a>
+        <nav>
+            <a href="/index.html"><span><i class="fa-solid fa-house"></i></span> Início</a>
+            <a href="/faxina.html"><span><i class="fa-solid fa-bucket"></i></span> Check-list Faxina</a>
+            <a href="/camareira.html"><span><i class="fa-solid fa-mattress-pillow"></i></i></span> Check-list Camareira</a>
+        </nav>
+    </header>
+    <main class="lancarServicos">
+        <div class="controle">
+            <h1>CRONOGRAMA</h1>
+            <div class="informacoes_controle">
+                <div class="dados_controle">
+                    <label for="nomeSetorCronograma"><i class="fa-solid fa-hospital"></i> Setor/Ala:</label>
+                    <select name="nomeSetorCronograma" id="nomeSetorCronograma" onchange="mostrarForm()" required>
+                        <option value="">Selecione</option>
+                        <option value="ALA D">ALA D</option>
+                    </select>
+                </div>
+                <div class="dados_controle">
+
+                </div>
+                <div class="dados_controle">
+                    <label for="nomeCronograma"><i class="fa-solid fa-user"></i> Responsável:</label>
+                    <input type="text" id="nomeCronograma" name="nomeCronograma" placeholder="João Maria" required>
+                </div>
+                <div class="dados_controle">
+
+                    <label for="dataCronograma"><i class="fa-solid fa-calendar-days"></i> Data Serviço:</label>
+                    <input type="date" id="dataCronograma" name="dataCronograma" required>
+                </div>
+            </div>
+        </div>
+        <div id="checklist">
+            <h1><i class="fa-solid fa-bucket"></i> Setor de Limpeza</h1>
+            <p id="textoSetorCronograma">
+
+            </p>
+            <form id="formulario">
+                
+                
+            </form>
+    </main>
+    <script src="/script/cronograma.js"></script>
+</body>
+</html>
