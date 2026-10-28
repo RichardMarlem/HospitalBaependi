@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,13 +9,15 @@
     <script src="https://kit.fontawesome.com/6621c552df.js" crossorigin="anonymous"></script>
     <title>Check-list Cronograma</title>
 </head>
+
 <body>
     <header>
         <a href="/index.html"><img src="/assets/img/logo-horizontal.png" alt="Logo Hospital"></a>
         <nav>
             <a href="/index.html"><span><i class="fa-solid fa-house"></i></span> Início</a>
             <a href="/faxina.html"><span><i class="fa-solid fa-bucket"></i></span> Check-list Faxina</a>
-            <a href="/camareira.html"><span><i class="fa-solid fa-mattress-pillow"></i></i></span> Check-list Camareira</a>
+            <a href="/camareira.html"><span><i class="fa-solid fa-mattress-pillow"></i></i></span> Check-list
+                Camareira</a>
         </nav>
     </header>
     <main class="lancarServicos">
@@ -48,10 +51,23 @@
 
             </p>
             <form id="formulario">
-                
-                
+                <div class="logoHospital">
+                    <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
+                </div>
             </form>
+        </div>
+        <div class="registrar">
+            <input type="button" value="REGISTRAR SERVIÇO" onclick="verDados()">
+        </div>
     </main>
+    <footer>
+        <div class="textoFooter">
+            <img src="/assets/img/logo-horizontal.png" alt="Logo Hospital">
+            <h1>HOSPITAL DE BAEPENDI</h1>
+            <p>Cônego Monte Raro</p>
+        </div>
+    </footer>
     <script src="/script/cronograma.js"></script>
 </body>
+
 </html>

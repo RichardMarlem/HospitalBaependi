@@ -30,9 +30,7 @@ function coletarDados() {
 
 function mostrarForm() {
     const formulario = document.getElementById('formulario');
-
     const setores = document.getElementById('nomeSetorCronograma').value;
-
     const textoSetor = document.getElementById('textoSetorCronograma');
 
     if (setores === 'ALA D') {
@@ -88,13 +86,11 @@ function mostrarForm() {
     }
 }
 
-function limparFormulario() {
-    
-    document.getElementById('setor').value = '';
-    document.getElementById('nome').value = '';
-    document.getElementById('data').value = '';
+function limparFormulario() { 
+    document.getElementById('nomeSetorCronograma').value = '';
+    document.getElementById('nomeCronograma').value = '';
+    document.getElementById('dataCronograma').value = '';
 
-    
     const formulario = document.getElementById('formulario');
     formulario.innerHTML = `
         <div class="logoHospital">
@@ -102,21 +98,20 @@ function limparFormulario() {
         </div>
     `;
 
-    
-    document.getElementById('nomeSetor').innerHTML = '';
+    document.getElementById('nomeSetorCronograma').innerHTML = '';
 }
 
 async function verDados() {
     const dados = coletarDados();
     
-    if (!dados.setor || !dados.nome || !dados.data) {
-        alert("Preencha o setor, o nome e a data antes de registrar.");
+    if (!dados.nomeSetorCronograma || !dados.nomeCronograma || !dados.dataCronograma) {
+        alert("Preencha o Setor, o Nome e a Data antes de registrar.");
         return;
     }
 
     try {
         const resposta = await fetch(
-            "https://defaultb5738c79b980469fadac95ed46cede.ef.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/ded80f2c5ab641fab3c08ffee7b52215/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7-XIf8KXLM8ghgjmTBa_Jz-WYr6nvhYZkVQ8reyCVEc",
+            "",
             {
                 method: "POST",
                 headers: {
@@ -131,8 +126,6 @@ async function verDados() {
         }
 
         alert("Cadastro Realizado!");
-
-        
         limparFormulario();
 
     } catch (erro) {

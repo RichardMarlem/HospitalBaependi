@@ -147,7 +147,7 @@ async function verDados() {
 
     try {
         const resposta = await fetch(
-            "https://defaultb5738c79b980469fadac95ed46cede.ef.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/01/workflows/ded80f2c5ab641fab3c08ffee7b52215/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7-XIf8KXLM8ghgjmTBa_Jz-WYr6nvhYZkVQ8reyCVEc",
+            "",
             {
                 method: "POST",
                 headers: {
