@@ -147,7 +147,7 @@ async function verDados() {
 
     try {
         const resposta = await fetch(
-            "",
+            "https://defaultb5738c79b980469fadac95ed46cede.ef.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/08/workflows/7ad5556ef30a46e7b9e206cb162833cb/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=MhN18op84iILulo6elYK14lrnQxAKjqPYsGnQ_yDzrQ",
             {
                 method: "POST",
                 headers: {
@@ -158,7 +158,13 @@ async function verDados() {
         );
 
         if (!resposta.ok) {
-            throw new Error(`Erro HTTP: ${resposta.status}`);
+        const detalhe = await resposta.text();
+
+        console.error("Método enviado: POST");
+        console.error("Status HTTP:", resposta.status);
+        console.error("Resposta do Power Automate:", detalhe);
+
+        throw new Error(`Erro HTTP: ${resposta.status}`);
         }
 
         alert("Cadastro realizado com sucesso!");
