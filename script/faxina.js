@@ -134,19 +134,6 @@ function coletarDados() {
         depositoCadeirasMacasB: val('depositoCadeirasMacasB'),
         epiB: val('epiB'),
         observacaoB: val("observacaoB"),
-
-        // --- SETOR: D ---
-
-        copaD: val('copaD'),
-        areaExternaD: val('areaExternaD'),
-        tendaTriagemD: val('tendaTriagemD'),
-        salaObservacaoD: val('salaObservacaoD'),
-        rampaD: val('rampaD'),
-        limpezaMobiliariosD: val('limpezaMobiliariosD'),
-        lavarLixeirasD: val('lavarLixeirasD'),
-        retirarResiduosD: val('retirarResiduosD'),
-        epiD: val('epiD'),
-        observacaoD: val("observacaoD"),
         
         // --- SETOR: E --- 
         postoEnfermagemE: val('postoEnfermagemE'),
@@ -194,7 +181,7 @@ function mostrarForm(){
     const setores = document.getElementById('setor').value
     const textoSetor = document.getElementById('nomeSetor');
 
-    if (setores == 'Noturno') {
+    if (setores == '1958090d-2009-4e51-a24f-419c4dff5fa5') {
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -524,7 +511,7 @@ function mostrarForm(){
                     </div>
                 </div>
         `
-    } else if (setores == 'C-1') {
+    } else if (setores == '1e8f7e90-0162-4bb4-a4b1-ad3b707456d2') {
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -912,7 +899,7 @@ function mostrarForm(){
                     </div>
         `;
 
-    } else if (setores == 'A'){
+    } else if (setores == 'd938dd96-fc3f-4480-91d9-898d5d9e7ee3'){
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -1262,7 +1249,7 @@ function mostrarForm(){
                     </div>
        
        ` ;
-    } else if (setores == 'B'){
+    } else if (setores == '9f415d6e-59ad-45a6-9bc4-c2853e9a5063'){
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -1529,119 +1516,8 @@ function mostrarForm(){
         
         `;
     
-    }   else if (setores == 'D'){
-        textoSetor.innerHTML = `${setores}`
-
-        formulario.innerHTML = `
-                <div class="dados_checklist">
-                    <label for="copaD">Copa:</label>
-                    <select name="copaD" id="copaD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="areaExternaD">Área externa:</label>
-                    <select name="areaExternaD" id="areaExternaD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="tendaTriagemD">Tenda de triagem:</label>
-                    <select name="tendaTriagemD" id="tendaTriagemD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="salaObservacaoD">Sala de observação:</label>
-                    <select name="salaObservacaoD" id="salaObservacaoD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="rampaD">Rampa:</label>
-                    <select name="rampaD" id="rampaD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="limpezaMobiliariosD">Limpeza nos mobiliários:</label>
-                    <select name="limpezaMobiliariosD" id="limpezaMobiliariosD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="lavarLixeirasD">Lavar lixeiras:</label>
-                    <select name="lavarLixeirasD" id="lavarLixeirasD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="retirarResiduosD">Retirar os resíduos:</label>
-                    <select name="retirarResiduosD" id="retirarResiduosD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div>
-                <div class="dados_checklist">
-                    <label for="epiD">Epi's:</label>
-                    <select name="epiD" id="epiD">
-                        <option value="">Selecione</option>
-                        <option value="Limpeza Diária">Limpeza Diária</option>
-                        <option value="Limpeza Quartos">Limpeza Quartos</option>
-                        <option value="Limpeza Terminal">Limpeza Terminal</option>
-                        <option value="Limpeza c/ enceradeira">Limpeza c/ enceradeira</option>
-                        <option value="Noturno">Noturno</option>
-                    </select>
-                </div> 
-                <div class="dados_checklist">
-                    <div class="textoObservacao">
-                        <label for="observacaoD">Observação:</label>
-                        <textarea id="observacaoD" name="observacaoD" placeholder="Digite sua observação..."></textarea>
-                    </div>
-                </div>
-        `
-    } 
-    
-    else if (setores == 'E') {
+    }       
+    else if (setores == '762b68e1-d603-4145-a3bc-1a5d0a6085b3') {
         textoSetor.innerHTML = `${setores}`;
         
         formulario.innerHTML = `
