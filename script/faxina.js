@@ -181,7 +181,7 @@ function mostrarForm(){
     const setores = document.getElementById('setor').value
     const textoSetor = document.getElementById('nomeSetor');
 
-    if (setores == '1958090d-2009-4e51-a24f-419c4dff5fa5') {
+    if (setores == 'Noturno') {
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -511,7 +511,7 @@ function mostrarForm(){
                     </div>
                 </div>
         `
-    } else if (setores == '1e8f7e90-0162-4bb4-a4b1-ad3b707456d2') {
+    } else if (setores == 'C-1') {
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -899,7 +899,7 @@ function mostrarForm(){
                     </div>
         `;
 
-    } else if (setores == 'd938dd96-fc3f-4480-91d9-898d5d9e7ee3'){
+    } else if (setores == 'A'){
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -1249,7 +1249,7 @@ function mostrarForm(){
                     </div>
        
        ` ;
-    } else if (setores == '9f415d6e-59ad-45a6-9bc4-c2853e9a5063'){
+    } else if (setores == 'B'){
         textoSetor.innerHTML = `${setores}`;
 
         formulario.innerHTML = `
@@ -1517,7 +1517,7 @@ function mostrarForm(){
         `;
     
     }       
-    else if (setores == '762b68e1-d603-4145-a3bc-1a5d0a6085b3') {
+    else if (setores == 'E') {
         textoSetor.innerHTML = `${setores}`;
         
         formulario.innerHTML = `
